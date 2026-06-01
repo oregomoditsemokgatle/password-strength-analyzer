@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Strength Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Password Strength Analyzer</h1>
+    <p>Check how secure your password is.</p>
+
+    <input type="password" id="password" placeholder="Enter your password" />
+
+    <button onclick="checkPassword()">Analyze Password</button>
+
+    <div class="result">
+      <h2 id="strengthText">Strength: -</h2>
+      <div class="bar">
+        <div id="strengthBar"></div>
+      </div>
+      <ul id="feedback"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
